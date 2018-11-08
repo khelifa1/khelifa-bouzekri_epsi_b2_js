@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaflet Examples</title>
+  <meta charset="utf-8">
+
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+  
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+
+  <style type="text/css">
+   #mapid { 
+    height: 600px;
+  }
+
+  </style>
+
+</head>
+<body>
+
+<div id="mapid"></div>
+
+<script type="text/javascript">
+var map = L.map('mapid').setView([48.866667, 2.333333], 13);
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+
+  function drawPopup(long,lat,desc){
+
+    marker = L.marker([long,lat]).addTo(map);
+    marker.bindPopup(desc).openPopup();
+  }
+
+  function loadData() {
+    
+      var xhttp = new XMLHttpRequest();
+
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) 
+        {
+
+      var dataset=JSON.parse (this.responseText);
+         console.clear();
+         console.log(this.responseText);
+         
+      var i;                                    
+        for (i in dataset.records){          //boucle for
+
+      var addr=dataset.records[i].fields.adresse; 
+      var lat=dataset.records[i].geometry.coordinates[0];  
+      var long=dataset.records[i].geometry.coordinates[1];
+        drawPopup(long, lat, addr);
+
+        }
+      }
+    }
+      var service ='https://opendata.paris.fr/api/records/1.0/search/?dataset=etablissements-scolaires';
+
+      xhttp.open("GET", service, true);
+      xhttp.send();
+
+}
+</script>
+<button onclick="drawPopup(48.866667,2.333333,'Je suis une popup !')"> LOAD POPUP>
+<button onclick="loadData()"> LOAD DATA>
+</body>
+</html>
