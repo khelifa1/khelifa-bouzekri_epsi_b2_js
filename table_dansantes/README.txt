@@ -1,0 +1,1 @@
+C’est une méthode Javascript qui permet de représenter graphiquement les tables de multiplications
