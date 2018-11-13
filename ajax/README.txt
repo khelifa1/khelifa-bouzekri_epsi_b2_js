@@ -1,0 +1,1 @@
+Leaflet.js est une librairie javascript de cartographie interactive open source. Elle permet de découvrir la position géographique des endroits et de les afficher sur une carte. Dans notre exemple nous avons affiché les sites des écoles primaires parisienne.
