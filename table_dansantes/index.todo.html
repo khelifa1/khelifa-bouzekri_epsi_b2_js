@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplication</title>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet" media="all" type="text/css">
+  <script type="text/javascript" src="index.todo.js"></script>
+</head>
+<body onload="load();">
+
+<div class="inputdiv">
+  Table:<input id="table" type="text" size="4" value="2" />
+  Points:<input id="modulo" type="text" size="4" value="10" />
+ 
+  <button onclick="drawTable();">DRAW</button>
+  <button onclick="autoIncrementTable();">AutoIncrement table</button>
+  <button onclick="autoIncrementModulo();">AutoIncrement points</button>
+  <button onclick="autoIncrementBoth();">AutoIncrement both</button>
+  <button onclick="stopFunction();">Stop</button>
+</div>
+  <canvas id="canvas" width="500" height="600"></canvas><br/>
+
+
+  <p id="stats"></p>
+ 
+</body>{
+  height:10%;
+  width:10%;
+  padding: 0px;
+
+  margin: auto;
+  text-align: center;  
+}
+
+#canvas{
+  padding: 0;
+  margin: auto;
+  display: block;
+}
+
+.inputdiv{
+  margin: 2px;
+}
+
+</html>
