@@ -7,5 +7,5 @@ Ce dépôt contient les dossiers ci-après dans lesquelles on trouve les exercices 
 - reactDemo
 - table_dansantes
 
-Chaque dossier dispose d'un fichier README fichier contenant des informations sur les exercice realisés et leur fonctionnement.
+Chaque dossier dispose d'un fichier README contenant des informations sur les exercice realisés et leur fonctionnement.
 
