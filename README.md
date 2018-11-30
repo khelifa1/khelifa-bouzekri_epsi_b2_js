@@ -4,7 +4,7 @@ Ce dépôt contient les dossiers ci-après dans lesquelles on trouve les exercices 
 - api_html5
 - mini_projet
 - nodejs (service_date) / node1(socket.js)
-- react
+- reactDemo
 - table_dansantes
 
 Chaque dossier dispose d'un fichier README contenant des informations sur les exercice realisés et leur fonctionnement.
