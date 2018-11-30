@@ -3,7 +3,7 @@ Ce dépôt contient les dossiers ci-après dans lesquelles on trouve les exercices 
 - Ajax 
 - api_html5
 - mini_projet
-- nodejs (service_date) / node1(server_node)
+- nodejs (service_date) / node1(socket.js)
 - reactDemo
 - table_dansantes
 
