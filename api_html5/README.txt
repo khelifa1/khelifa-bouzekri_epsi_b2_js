@@ -6,6 +6,6 @@ Il y a trois étapes : Glisser, rester appuie, déposer
 
 Exercice Particule:
 
-Le pricipe du système à particule repose sur une technique graphique, numérique utilisée par les logiciels graphiques 2D ou 3D.
-Il permet de simuler de nombreux phénomènes naturels tels que feu, explosion, fumée, eau, nuage, poussière, neige, feux d'artifices.
-Dans notre exemple nous avons programmer un émetteur qui génère les particules en boucle depuis un point (x) vers un point (y) qui les propage avec Spread.
+Le principe du système à particule repose sur une technique graphique et numérique utilisée par les logiciels graphiques 2D ou 3D.
+Ce système permet de simuler de nombreux phénomènes naturels tels que le feu, l'explosion, la fumée, l'eau, le nuage, la poussière, la neige, feux d'artifices.
+Dans notre exemple nous avons programmer un émetteur qui génère des particules en boucle depuis un point (x) vers un point (y). Une fois atteint la cible (y) ces particules seront propage avec l'outil Spread.
