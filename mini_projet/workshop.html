@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>  Mini-projet workshop</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<style type="text/css">
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+</style>
+<body>
+
+
+
+<div id="tableaucampus"> 
+<table>
+	
+
+	<tr> 
+	<th> Campus Arras </th> 
+	<th> Campus Bordeaux </th> 
+	<th> Campus  Brest </th> 
+	<th> Campus Grenoble </th>	
+	<th> Campus Lille </th> 
+	<th> Campus Lyon </th> 
+	<th> Campus Montpelier </th> 
+	<th> Campus Nantes </th> 
+	<th> Campus Paris </th> 
+	<th> Campus Paris </th> 
+	<th> Campus Sens </th> 
+</tr>
+
+<tr>
+	<th> Campus Arras</th> 
+	<input type="text" id="notecampus" > Attente de notes> 
+</tr>	
+	<tr>
+	<th> Campus Bordeaux</th>   
+</tr>
+<tr>
+	<th> Campus Grenoble</th> 
+</tr>	
+<tr>
+	<th> Campus Brest</th> 
+</tr>	
+<tr>
+	<th> Campus Lille</th>   
+</tr>	
+<tr>
+	<th> Campus Lyon</th> 
+</tr>	
+<tr>
+	<th> Campus Montpelier</th> 
+</tr>	
+<tr>
+	<th> Campus Nantes</th> 
+</tr>	
+<tr>
+	<th> Campus Paris </th> 
+</tr>	
+<tr>
+	<th> Campus Sens</th> 
+</tr>	
+
+
+
+</table>
+<div>
+
+	<h2> Barème </h2>
+	<p>  Les notes vont de 0 à 20 </p>
+	<p> Les campus peuvent s'attribuer leur propre note </p>
+
+</div>
+</div>
+<script type="text/javascript">
+	
+// on crée une liste avec tout les campus 
+// on peut les répresenter sous formes de tableaux 
+let tableaucampus = ["Campus Arras", "Campus Bordeaux", "Campus Brest","Campus Grenoble","Campus Lille","Campus Lyon","Campus Montpelier","Campus Nantes","Campus Paris","Campus Sens"];
+
+console.table(tableaucampus);
+prompt();
+
+function  letabe(){
+
+	
+/*	if (notes != null){
+
+		document.getElementById('tableaucampus').innerHTML="Campus"+notes;
+	}*/	document.getElementById('notecampus').value;
+
+}
+
+
+</script>
+<button onclick="letable()" >  Notes</button>
+</body>
+</html>
+
+
+

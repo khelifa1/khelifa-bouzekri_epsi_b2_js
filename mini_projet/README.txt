@@ -1,6 +1,11 @@
-Pour notre exposé, nous avons choisi d'étudier cette technologie JavaScript. L’article est publié sur le site trois point zéro : Petit tour d’horizon de React.JS
-React est une bibliothèque JavaScript libre développée par Facebook depuis 2013. Le but principal de cette bibliothèque est de faciliter la création d'application web monopage. React Native qui se base sur react.js est orienté applications mobiles.
-La bibliothèque se démarque de ses concurrents par sa flexibilité et ses performances, en travaillant avec un DOM virtuel et en ne mettant à jour le rendu dans le navigateur qu'en cas de nécessité.
+Le mini-projet propose sur un système de notation workshop des 10 campus EPSI de France.
+Ce system prend en compte certains paramètres : 
+- chaque campus donne une note aux autres campus compris lui-même entre 0 et 20
+- remmener ces scores sur une base de point entre 1 et 9.
+- le premier des campus est celui qui aura obtenu le plus de points.
 
-Elle est devenue très populaire elle a été utilisée notamment par Netflix en 2017 pour gagner 50 % de performance, mais aussi 
- Yahoo, Facebook, appliquant le dogfooding sur le réseau social éponyme, Instagram ou encore WhatsApp.
+ Fonctionnement:
+- Taper sur l-URL : http://localhost:3000/notation?type=accueil,
+- Choisir un campus pour donner une note entre 0 et 20.
+
+
