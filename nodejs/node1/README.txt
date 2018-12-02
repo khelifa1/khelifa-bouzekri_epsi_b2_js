@@ -6,3 +6,6 @@ Parce qu'elle permet de faire très simplement de la communication synchrone dans
 - Elle nous permet par exemple de mettre en place très facilement un Chat sur notre site;
 - Elle peut même servir comme une brique de base pour mettre en place un jeu où on voit en direct les personnages évoluer dans le navigateur, le tout sans avoir à recharger la page.  
 - On peut emettre et recevoir des messages avec socket.io (avce la possibilité d'envoyer un message à tous les clients (broadcast)).
+Fonctionnemnt:
+- ouvrir l'invite de commande 'nodejs' puis sélectionnez le fichier 'index' et éxécuter la commande 'node index.js'
+- aller sur l'URL et taper : http://localhost:3000
